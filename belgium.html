@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+ <img class="belg" src="images/belg.jpeg" alt="" srcset="">
+<img class="ballon"src="images/ballon.png" alt="" srcset="">
+<img class="goal"src="images/goal.png" alt="" srcset="">
+<img class="keep"src="images/keeper.png" alt="" srcset="">
+<div id="stage"></div>
+</body>
+
+<style>
+body{
+    background-color: green;
+    border:1px green solid;
+}
+.ballon{
+    position: absolute;
+    display: inline-block;
+    height: 50px;
+    margin-left: 6px;
+    margin-top: 240px;
+    animation: mymove 5s infinite;
+    z-index:10;
+}    
+.goal{
+    height: 400px;
+    display: inline-block;
+    margin-left: 400px;
+    position: relative;
+    z-index: 1;
+
+}
+.belg{
+    display: inline-block;
+    height: 320px;
+    width: 260px;
+    margin-top: 100px;
+    animation: mymove2 5s infinite;
+    position: relative;
+}
+.keep{
+    height: 200px;
+    display: inline-block;
+    margin-left: 500px;
+    position: absolute;
+    z-index: 44;
+}
+@keyframes mymove {
+    0%   {top: 100px; left: 200px;transform: initial;}
+    60% {top: 1px; left: 1104px; transform: rotate(590deg);}
+    100% {top: 130px; left: 299px;transform: initial;}
+}
+@keyframes mymove2 {
+    0%   {top: 10px; left: 60px;transform: initial;}
+    60% {top: 10px; left: 104px; transform: initial;}
+    100% {top: 10px; left: 60px;transform: initial;}
+}
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <div id="stage">
+    <div id="hero">  
+        
+        
+</body>
+</html>
+
+<style>
+    #stage{
+        background:transparent url(./images/css_animation_exercise.png) 0 0 no-repeat;
+        width:100%;
+        height: 600px;
+        margin-left: 300px;
+    }
+    #hero{
+        position: absolute;
+        display: inline-block;
+        border:1px dashed red;
+        left:10px;
+        height: 71px;
+        width: 71px; 
+        margin-left: 319px;
+        margin-top: 22px;
+        animation: mymove 5s infinite;
+        
+    }
+    @keyframes mymove {
+    0%   {top: 5px; left: 36px;transform: initial}
+    30% {top: 5px; left: 494px; transform: initial}
+    55%  {top: 210px; left: 494px; background: yellow;transform: initial}
+    75%  {top: 210px; left: 210px; transform:rotate(40deg);}
+    85%  {top: 210px; left: 36px; border-color: blue; transform: initial;}
+    100% {top: 500px; left: 474px; transform: initial;}
+}   
+</style>
